@@ -1,0 +1,154 @@
+:root {
+    --black: #0c0900;
+    --white: color white;
+    --lightblue : #ABDDD8;
+    --blue : #1D4783;
+    --blue2 : #ccddf7;
+}
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    background-color: var(--lightblue);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        'Nav'
+        'logo'
+        'Header'
+        'Main';
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+
+#header1{
+    grid-area:Header;
+    font-size: 40px;
+    font-family: Calibri;
+   
+    
+}
+
+.active {
+    border: 2px solid var(--black);
+    border-radius: 5px;
+}
+
+.gmap_iframe {
+    width:400px;
+    height:400px;
+}
+
+
+.logo_signUp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+
+nav{
+    grid-area:Nav;
+    background-color: #1D4783;
+    color: var(--black);
+    display: flex;
+    padding-left: 0px;
+    right: 0px;
+    font-size: 20px;
+    text-align: Center;
+    padding-top: 4px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding-right: 0px;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 10px 10px;
+}
+.nav a {
+    color:var(--black);
+    font-family: Calibri;
+}
+
+.nav a:hover {
+    color:var(--blue2);
+}
+
+
+#formSignup{
+    background: var(--white) center 0px;
+    width: 400px;
+    border-radius: 60px;
+    margin: 20px auto;
+    height: 355px;
+}
+
+
+.header {
+    grid-area: Header;
+    color: var(--black);
+    display: flex;
+    padding-top: 10px;
+    font-size: 20px;
+    height: 20px;
+    text-align: center;
+    font-family: Calibri;
+   
+
+} 
+
+ .pDiv {
+    grid-area: Main;
+    padding-top: 0PX;
+    color: black;
+    font-size: 20px;
+    font-family: Calibri;
+     
+}
+
+
+
+@media only screen and (max-width : 600px) {
+    .homePageBody {
+        background-color: lightskyblue;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-areas: 'Nav'
+            'logo'
+            'Header'
+            'Main';
+    }
+
+}
+
+
+
+
+
+
+
+.btn:hover {
+    opacity: 1
+}
+
+
+
