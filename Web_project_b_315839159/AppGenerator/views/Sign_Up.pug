@@ -1,0 +1,48 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title CarKing - Home Page
+  link(rel='stylesheet' href='/stylesheets/Part2.css')
+  link(rel='icon' href='./images/JS_logo.png')
+  script(defer='' src='/javascripts/finaljs.js')
+  
+.continer  
+  nav.nav
+          ul.nav-list
+            li.list-item
+              a(href='/homePage')  Home Page
+            li.list-item
+              a(href='/signUp')  Sign Up
+          logo#logo_sign
+              a(href='/homePage')
+                img(src='./images/logo.png' width = '30%')
+  .header
+        span
+            h1#header1 Sign Up
+  .form
+         form#formSignup( action='/newUser' method='post')
+            label(for='') First Name
+            br
+            input#firstName(type='text' name='firstName' autocomplete='on' required='')
+            br
+            label(for='') Last Name
+            br
+            input#lastName(type='text' name='lastName' autocomplete='on' required='')
+            br
+            label(for='') Email
+            br
+            input#email(type='email' name='email' autocomplete='on' required='')
+            br
+            label(for='') Password
+            br
+            input#password(type='password' name='password' autocomplete='on' required='')
+            br
+            label(for='') alredy have an account?
+            br
+            li.list-item
+               a(href='/signIn')  Log in
+            br
+            br
+            button.button(type='submit') Create

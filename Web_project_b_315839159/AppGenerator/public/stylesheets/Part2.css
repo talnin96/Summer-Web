@@ -26,16 +26,16 @@ body {
         'Main';
 }
 .logo{
+    grid-area:Header;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 100px;
-    width: 100px;
+    width: 30%;
 }
 
 #header1{
     grid-area:Header;
-    font-size: 40px;
+    font-size: 60px;
     font-family: Calibri;
    
     
@@ -46,18 +46,23 @@ body {
     border-radius: 5px;
 }
 
-.gmap_iframe {
-    width:400px;
-    height:400px;
+
+
+.mapouter{
+    grid-area:Main;
+    margin-left: auto;
+    margin-right: auto;
+    width:500px;
+    height:500px;
 }
 
 
-.logo_signUp {
+#logo_sign {
+    grid-area:Nav;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 100px;
+    margin-right: 30px;
+    width: 10%;
 }
 
 nav{
@@ -90,6 +95,30 @@ nav{
     color:var(--blue2);
 }
 
+.form {
+    grid-area:Main;
+    background: var(--white) center 100px;
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+input[type=text] {
+    padding:5px;
+    border:0;
+    box-shadow:0 0 15px 5px rgba(0,0,0,0.06);
+}
+
+input[type=email] {
+    padding:5px;
+    border:0;
+    box-shadow:0 0 15px 5x rgba(0,0,0,0.06);
+}
+
+input[type=password] {
+    padding:5px;
+    border:0;
+    box-shadow:0 0 15px 5px rgba(0,0,0,0.06);
+}
 
 #formSignup{
     background: var(--white) center 0px;
@@ -99,31 +128,65 @@ nav{
     height: 355px;
 }
 
+#lng , #lat{
+    visibility: hidden;
+}
+
+
+
 
 .header {
     grid-area: Header;
     color: var(--black);
-    display: flex;
-    padding-top: 10px;
-    font-size: 20px;
-    height: 20px;
     text-align: center;
     font-family: Calibri;
    
 
 } 
 
- .pDiv {
+.pDiv {
     grid-area: Main;
     padding-top: 0PX;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Calibri;
      
 }
 
+.styled-table{
+    grid-area: Main;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #1D4783;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
 
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
 
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #1D4783;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #000f98;
+}
 @media only screen and (max-width : 600px) {
     .homePageBody {
         background-color: lightskyblue;
@@ -140,7 +203,17 @@ nav{
 
 }
 
-
+.button {
+  background-color: #1D4783; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px
+    
+}
 
 
 

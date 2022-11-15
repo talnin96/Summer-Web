@@ -1,0 +1,43 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title CarKing - Home Page
+  link(rel='stylesheet' href='/stylesheets/Part2.css')
+  link(rel='icon' href='./images/JS_logo.png')
+  script(defer='' src='/javascripts/finaljs.js')
+  
+  
+  .container  
+    nav.nav
+      ul.nav-list
+        li.list-item
+          a(href='/homePage')  Home Page
+        li.list-item
+          a(href='/signIn')  Log In
+    .logo
+      a(href='/homePage')
+        img(src='./images/JS_logo.png')
+    .styled-table
+      h3 parking lots
+        br
+        table
+            thead
+              tr
+              th Name
+              th Adress
+              th Cost(nis)
+              th Distance(km)
+              th Localized
+          
+            tbody
+            each t in spf
+              tr.active-row
+              td #{t.Name}
+              td #{t.Address}
+              td #{t.Cost}
+              td #{t.Distance}
+              td #{t.Localized}
+         
+    

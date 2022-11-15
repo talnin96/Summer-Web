@@ -1,0 +1,51 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title CarKing - Home Page
+  link(rel='stylesheet' href='/stylesheets/Part2.css')
+  link(rel='icon' href='./images/JS_logo.png')
+  script(defer='' src='/javascripts/finaljs.js')
+
+.continer  
+  nav.nav
+          ul.nav-list
+            li.list-item
+              a(href='/homePage')  Home Page
+            li.list-item
+              a(href='/signUp')  Sign Up
+          logo#logo_sign
+              a(href='/homePage')
+                img(src='./images/logo.png' width = '30%')
+  .header
+        span
+            h1#header1 Log In
+  .form
+        form#formSignup(action='/parkinglots' method='post')
+          label(for='') Email
+          br
+          input#email(type='email' name='email' autocomplete='on' )
+          br
+          label(for='') Password
+          br
+          input#password(type='password'  name='password' autocomplete='on' )
+          br
+          br
+          br
+          label(for='') you don&apos;t have an account?
+          br
+          li.list-item
+            a(href='/signUp')  Sign Up
+          br
+          label(for='')
+          | In order to provide you with a parking space nearby we will need your location, please allow us to use it
+          br
+          input#useLocation(type='checkbox' name='useLocation' required='' onclick="getLoaction()")
+          label(for='') you can use my location
+          br
+          input#lng(type='number' name='lng') 
+          input#lat(type='number' name='lat') 
+          button.button#demo2( type='submit' ) Log in 
+  
+ 
